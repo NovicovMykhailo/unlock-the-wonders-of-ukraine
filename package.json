@@ -1,0 +1,21 @@
+{
+  "name": "unlock-the-wonders-of-ukraine",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://NovicovMykhailo.github.io/unlock-the-wonders-of-ukraine",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /unlock-the-wonders-of-ukraine/"
+  },
+  "keywords": [],
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
