@@ -1,0 +1,50 @@
+.burger-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: all $animate;
+
+}
+
+.burger-icon > span {
+  display: block;
+  height: 2.1px;
+  border-radius: 1px;
+  background-color: #fff;
+  transition: all $animate;
+  position: absolute;
+}
+.burger-icon > span:nth-child(1) {
+  top: 10px;
+  right: 7px;
+  width: 16px;
+}
+.burger-icon > span:nth-child(2) {
+  opacity: 1;
+  top: 50%;
+  right: 7px;
+  width: 70%;
+  transform: translateY(-50%);
+}
+.burger-icon > span:nth-child(3) {
+  bottom: 10px;
+  left: 4px;
+  width: 16px;
+}
+
+.burger-icon.active > span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active > span:nth-child(1) {
+  top: 19px;
+  width: 70%;
+  transform: rotate(45deg);
+}
+
+.burger-icon.active > span:nth-child(3) {
+  top: 19px;
+  width: 70%;
+  transform: rotate(-45deg);
+}

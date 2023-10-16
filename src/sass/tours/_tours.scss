@@ -1,0 +1,119 @@
+.swiper {
+  width: 100%;
+}
+.tours{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tours-container{
+  display: block;
+}
+.tour-card {
+  width: 375px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+
+}
+.card-image-contaier {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.tour-card-image {
+  width: auto;
+  height: 409px;
+  position: relative;
+  left: -33%;
+}
+.tour-card-title {
+  font-family: Jomolhari;
+  font-size: 24px;
+  line-height: 33.6px;
+  letter-spacing: 0.24px;
+  font-weight: 400;
+}
+.tour-card-description {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+  height: 246px;
+  overflow-y: scroll;
+}
+
+.tour3{
+  margin-bottom: 35px;;
+}
+
+.card-list-title {
+  font-family: Jomolhari;
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: 0.18px;
+  margin-bottom: 16px;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.card-list > li {
+  font-family: Lato;
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.card-icons {
+  width: 24px;
+}
+
+.card-btn {
+  width: 100%;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.arrow-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.tours-arrow-container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.arrow {
+  cursor: pointer;
+  filter: brightness(50);
+}
+
+.inactive {
+  filter: brightness(1) !important;
+}
+
+
+
+@media screen and (min-width: 835px){
+  .tour-card{
+    width: 50% !important;
+  }
+}

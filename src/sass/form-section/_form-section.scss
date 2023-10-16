@@ -1,0 +1,116 @@
+.form-section {
+  display: flex;
+  text-align: left;
+  padding: 54px 0;
+
+
+
+
+
+  background-image: url('../images/form/mob.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url('../images/form/mob@2x.jpg');
+  }
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 16px;
+
+  background: #141A19;
+  backdrop-filter: blur(15px);
+}
+.form-title {
+  font-family: Jomolhari;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44.8px;
+  letter-spacing: 0.32px;
+}
+.form-description {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form-label {
+  font-family: Jomolhari;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: 0.18px;
+}
+
+.form-label > input{
+  margin-top: 8px;
+  outline: none;
+}
+.form-field {
+  display: flex;
+  width: 100%;
+  padding: 14px 12px;
+  background-color: transparent;
+  border: 1px solid $text-white;
+
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+  color: white;
+}
+
+
+.form-field::placeholder {
+  color: $placeholder;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.16px;
+}
+.message {
+  resize: none;
+  height: 102px;
+  outline: none;
+}
+
+.sumbit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-section {
+    background-image: url('../images/form/tab.jpg');
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/form/tab@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form-section {
+    background-image: url('../images/form/dsk.jpg');
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/form/dsk@2x.jpg');
+    }
+  }
+}

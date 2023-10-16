@@ -1,0 +1,25 @@
+.prim-btn {
+  font-family: Jomolhari, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.16px;
+
+  border-radius: 4px;
+
+  color: $text-white;
+  background: $btn;
+  display: inline-flex;
+  padding: 16px 52px;
+  align-items: center;
+  gap: 8px;
+  transition: all $animate;
+}
+
+.prim-btn:is(:active){
+    border: 1px solid $text-white;
+    background-color: transparent;;
+}
+.prim-btn:is(:hover, :focus){
+   transform: scale(1.09)
+}

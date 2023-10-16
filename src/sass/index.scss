@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/vars';
+@import './base/base';
+@import './base/buttons';
+@import './base/burger-icon';
+
+
+@import "./header/header";
+@import './header/mobile-menu';
+@import "./hero/hero";
+@import "./hero/socials";
+@import "./about/about";
+@import "./tours/tours";
+@import "./gallery/gallery";
+@import "./reviews/reviews";
+@import "./form-section/form-section";
+@import "./footer/footer";
+
+

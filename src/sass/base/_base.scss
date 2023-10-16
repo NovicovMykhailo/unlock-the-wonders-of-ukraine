@@ -1,0 +1,100 @@
+body {
+  font-family: 'Jomolhari', 'Lato', serif;
+  font-weight: 400;
+  color: $text-white;
+  background-color: $bg;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b {
+  margin: 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 16px 0 16px;
+}
+
+.section-title {
+  font-family: Jomolhari;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.4px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
+    line-height: 89.6px;
+    letter-spacing: 0.64px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and(min-width:375px) {
+  section {
+    width: 375px;
+  }
+}
+@media screen and(min-width:835px) {
+  section {
+    width: 835px;
+    padding: 100px 32px 0 32px;
+  }
+}
+
+@media screen and(min-width:1440px) {
+  section {
+    width: 1440px;
+  }
+}
