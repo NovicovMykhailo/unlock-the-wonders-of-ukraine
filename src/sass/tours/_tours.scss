@@ -116,7 +116,7 @@
   filter: brightness(50);
 }
 .inactive {
-  filter: brightness(1) !important;
+  filter: brightness(0.9) !important;
 }
 
 @media screen and (min-width: $tab) {
@@ -182,6 +182,7 @@
     background-image: url("../assets/colos.png");
     background-position: right;
     background-repeat: no-repeat;
+    background-size: contain;
     @media screen and (min-resolution: 2dppx) {
       background-image: url('../assets/colos@2x.png');
     }}

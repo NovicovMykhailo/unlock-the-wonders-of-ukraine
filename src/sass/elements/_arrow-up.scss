@@ -34,14 +34,14 @@
 .arrow-icon:before {
   content: '';
   width: 70%;
-  rotate: -45deg;
+  transform: rotate(-45deg);
   right: 40%;
   top: 400%;
 }
 .arrow-icon:after {
   content: '';
   width: 70%;
-  rotate: 45deg;
+  transform: rotate(45deg);
   left: 40%;
   top: 400%;
 }

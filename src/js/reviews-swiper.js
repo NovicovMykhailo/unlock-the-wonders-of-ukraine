@@ -7,22 +7,28 @@ const reviewSwiper = new Swiper('.reviewSwiper', {
 
   slidesPerView: 1,
   spaceBetween: 16,
+
   
 
   breakpoints: {
     835: {
       cssWidthAndHeight: true,
       slidesPerView: 'auto',
-   
       visibilityFullFit: true,
       autoResize: false,
       spaceBetween: 32,
+    },
+    1440:{
+      cssWidthAndHeight: true,
+    
+      
     }
   },
   on: {
     slideChange: () => handleInactive(),
     init: () => navigation(),
   },
+  loop: true
 });
 
 function handleInactive() {
