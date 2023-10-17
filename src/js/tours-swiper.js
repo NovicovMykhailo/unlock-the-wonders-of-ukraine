@@ -10,7 +10,7 @@ const swiper = new Swiper('.tourSwiper', {
 
     1440: {
       slidesPerView: 2,
-      spaceBetween: 16
+      spaceBetween: 32
     }
   },
   on: {

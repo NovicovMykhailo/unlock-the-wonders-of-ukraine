@@ -1,0 +1,73 @@
+.arrow-up {
+  position: fixed;
+  background-color: #141a19af;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 5;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity $animate;
+  transition:  transform $animate;
+
+  left: 80%;
+  bottom: 1%;
+  width: 50px;
+  height: 50px;
+}
+
+.arrow-icon,
+.arrow-icon:before,
+.arrow-icon:after {
+  position: absolute;
+  display: block;
+  background-color: white;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.arrow-icon {
+  transform: translate(-50%);
+  width: 40%;
+  top: 35%;
+  left: 50%;
+}
+.arrow-icon:before {
+  content: '';
+  width: 70%;
+  rotate: -45deg;
+  right: 40%;
+  top: 400%;
+}
+.arrow-icon:after {
+  content: '';
+  width: 70%;
+  rotate: 45deg;
+  left: 40%;
+  top: 400%;
+}
+
+@media screen and (min-width: $tab) {
+  .arrow-up {
+    left: 90%;
+    bottom: 1%;
+    width: 55px;
+    height: 55px;
+  }
+
+  .arrow-icon:before,
+  .arrow-icon:after {
+    top: 500%;
+  }
+}
+
+@media screen and (min-width: $dsk) {
+  .arrow-up {
+    left: 94%;
+    bottom: 2%;
+    width: 60px;
+    height: 60px;
+  }
+  .arrow-up:hover{
+    transform: scale(1.04)
+  }
+}

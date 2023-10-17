@@ -5,6 +5,7 @@
 .tours {
   padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 
 .tour-card {
@@ -19,7 +20,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
 }
 
 .card-content {
@@ -92,7 +92,12 @@
   justify-content: center;
   align-self: flex-end;
 }
-
+.tour-list {
+  display: none;
+}
+.price {
+  display: none;
+}
 
 .arrow-container {
   display: flex;
@@ -115,7 +120,6 @@
 }
 
 @media screen and (min-width: $tab) {
-
   .tour-card {
     width: 100% !important;
     gap: 24px;
@@ -140,10 +144,10 @@
     height: auto;
     height: 201px;
   }
-  .card-list{
+  .card-list {
     margin: 0;
   }
-  .card-btn{
+  .card-btn {
     width: 169px;
     align-self: start;
     margin-top: 15px;
@@ -155,5 +159,82 @@
     width: 500px;
     padding: 0;
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: $dsk) {
+  .tour-card {
+    width: 704px !important;
+  }
+  .card-content {
+    gap: 32px;
+    margin-top: 64px;
+    width:100%;
+  }
+  .tour-card-title {
+    font-size: 32px;
+
+    font-weight: 400;
+    line-height: 44.8px;
+    letter-spacing: 0.32px;
+  }
+  .colos{
+    background-image: url("../assets/colos.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../assets/colos@2x.png');
+    }}
+    
+  .tour-card-image {
+    height: 515px;
+  }
+  .tour-card-description {
+    display: none;
+  }
+  .tour-text-container {
+    flex-direction: column;
+  }
+
+  .tour-list {
+    list-style: disc;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 496px;
+    min-height: 157px;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.16px;
+  }
+  .card-btn{
+    margin: 0;
+  }
+  .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:38px;
+  }
+  .price {
+    display: flex;
+    font-family: Jomolhari;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44.8px;
+    letter-spacing: 0.32px;
+    gap: 72px;
+  }
+
+  .tours-arrow-container {
+    width: 100%;
+    position: absolute;
+    top: 56%;
+    z-index: 4;
+    padding: 0 32px;
+    margin: 0;
   }
 }
