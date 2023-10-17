@@ -12,6 +12,26 @@
   @media screen and (min-resolution: 2dppx) {
     background-image: url('../images/form/mob@2x.jpg');
   }
+
+  @media screen and (min-width: $tab) {
+    background-image: url('../images/form/tab.jpg');
+    background-size: 602px 100%;
+    background-position: left;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/form/tab@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $dsk) {
+    background-image: url('../images/form/dsk.jpg');
+    background-size: 704px 100%;
+    background-position: left;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/form/dsk@2x.jpg');
+    }
+  }
 }
 
 .form-container {
@@ -21,7 +41,7 @@
   gap: 24px;
   padding: 40px 16px;
 
-  background: #141A19;
+  background: #141a19;
   backdrop-filter: blur(15px);
 }
 .form-title {
@@ -31,6 +51,12 @@
   font-weight: 400;
   line-height: 44.8px;
   letter-spacing: 0.32px;
+}
+.form-context-left{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 .form-description {
   font-family: Lato;
@@ -52,7 +78,7 @@
   letter-spacing: 0.18px;
 }
 
-.form-label > input{
+.form-label > input {
   margin-top: 8px;
   outline: none;
 }
@@ -69,7 +95,6 @@
   letter-spacing: 0.16px;
   color: white;
 }
-
 
 .form-field::placeholder {
   color: $placeholder;
@@ -92,22 +117,28 @@
   margin-top: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tab) {
   .form-section {
-    background-image: url('../images/form/tab.jpg');
-
-    @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/form/tab@2x.jpg');
-    }
+    padding: 100px 0;
+    height: 786px;
+  }
+ 
+  .form-container {
+    width: 770px;
+    border: 1px solid $text-white;
+    padding: 69px 49px;
+  }
+  .form-context {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .form-context-left {
+    margin-bottom: 0;
+    gap: 24px;
+    width: calc( 50% - 16px)
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .form-section {
-    background-image: url('../images/form/dsk.jpg');
-
-    @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/form/dsk@2x.jpg');
-    }
-  }
+@media screen and (min-width: $dsk) {
 }

@@ -5,8 +5,12 @@
   width: 100%;
 }
 
-
-@media screen and (min-width: 1440px){
+@media screen and (min-width: $tab) {
+  .gal-arows, .rew-arrows {
+    width: 100%;
+  }
+}
+@media screen and (min-width: $dsk) {
   .gallery-item {
     width: 400px !important;
   }

@@ -6,7 +6,6 @@
   transition: all $animate;
 
 }
-
 .burger-icon > span {
   display: block;
   height: 2.1px;
@@ -32,19 +31,22 @@
   left: 4px;
   width: 16px;
 }
-
 .burger-icon.active > span:nth-child(2) {
   opacity: 0;
 }
-
 .burger-icon.active > span:nth-child(1) {
   top: 19px;
   width: 70%;
   transform: rotate(45deg);
 }
-
 .burger-icon.active > span:nth-child(3) {
   top: 19px;
   width: 70%;
   transform: rotate(-45deg);
+}
+
+@media screen and (min-width: $tab){
+  .burger-icon{
+    display: none;
+  }
 }

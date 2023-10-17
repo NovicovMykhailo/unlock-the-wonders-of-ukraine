@@ -5,7 +5,8 @@
   background-image: url('../images/hero/mob.jpg');
   object-fit: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: cover;
   @media screen and (min-resolution: 2dppx) {
     background-image: url('../images/hero/mob@2x.jpg');
   }
@@ -47,9 +48,15 @@
 
   transform: scaleY(-1);
 }
+.hero-btn{
+  z-index:1;
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tab) {
   .hero {
+    height: 1075px;
+    padding-bottom: 300px;
+    padding-top: 300px;
     background-image: url('../images/hero/tab.jpg');
     @media screen and (min-resolution: 2dppx) {
       background-image: url('../images/hero/tab@2x.jpg');
@@ -70,7 +77,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $dsk) {
     .hero {
       background-image: url('../images/hero/dsk.jpg');
       @media screen and (min-resolution: 2dppx) {

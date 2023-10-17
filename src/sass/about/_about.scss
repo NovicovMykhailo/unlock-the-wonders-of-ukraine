@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 782px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     background-size: 991px;
     background-position: 50% 55px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $dsk) {
     background-size: 782px;
   }
 }
@@ -34,24 +34,23 @@
   margin-top: 31px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tab) {
   .about {
-    background-size: 991px;
+    background-size: 1038px;
     background-position: 50% 55px;
     padding: 100px 32px;
   }
-  .text-container{
+  .text-container {
     margin-bottom: 63px;
     flex-direction: row;
   }
   .text-topic {
     width: calc(50% - 16px);
   }
- 
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $dsk) {
   .about {
-    height :773px;
+    height: 773px;
     padding: 100px 208px;
     background-size: 1138px;
     background-position: center 100px;
