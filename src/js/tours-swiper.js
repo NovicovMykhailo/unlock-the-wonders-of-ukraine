@@ -4,8 +4,8 @@ const next = document.querySelector('.tours-next');
 const prev = document.querySelector('.tours-prev');
 
 const swiper = new Swiper('.tourSwiper', {
-  spaceBetween: 30,
-  effect: 'fade',
+  spaceBetween: 16,
+  slidesPerView: 1,
   breakpoints: {
 
     1440: {

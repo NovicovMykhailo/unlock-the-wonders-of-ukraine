@@ -4,16 +4,16 @@ const next = document.querySelector('.review-next');
 const prev = document.querySelector('.review-prev');
 
 const reviewSwiper = new Swiper('.reviewSwiper', {
-  spaceBetween: 30,
-  effect: 'fade',
+
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 16,
+  
 
   breakpoints: {
     835: {
       cssWidthAndHeight: true,
       slidesPerView: 'auto',
-      freeMode: true,
+   
       visibilityFullFit: true,
       autoResize: false,
       spaceBetween: 32,

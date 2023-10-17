@@ -67,10 +67,14 @@
   line-height: 22.4px;
   letter-spacing: 0.16px;
   text-align: left;
-  overflow-y: scroll;
 
-  height: 156px;
+
+  height: 158px;
   width: 100%;
+}
+
+.user-review::-webkit-scrollbar{
+  display: none;
 }
 
 @media screen and (min-width: 375px) {
