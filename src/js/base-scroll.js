@@ -1,16 +1,30 @@
-const body = document.body;
-const scrollWrap = document.querySelector('[data-scroll]');
-const height = scrollWrap.getBoundingClientRect().height - 1;
+import LocomotiveScroll from 'locomotive-scroll';
 
-const speed = 0.1;
-let offset = 0;
+export const scroller = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+  getSpeed: true,
+  getDirection: true,
+  inertia: 0.75,
+  useKeyboard: true,
+  lerp:0.1,
+  initPosition:{ x: 0, y: 0 },
+});
 
-body.style.height = Math.floor(height) + 'px';
+new ResizeObserver(() => scroller.update()).observe(
+  document.querySelector('[data-scroll-container]')
+);
 
-function smoothScroll() {
-  offset += (window.scrollY - offset) * speed;
-  if (offset < 1) offset = 0;
-  scrollWrap.style.transform = 'translateY(-' + offset + 'px) translateZ(0)';
-  callScroll = requestAnimationFrame(smoothScroll);
-}
-smoothScroll();
+document.querySelectorAll('[data-anchor]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const anchor = e.target.attributes.href.nodeValue;
+    scroller.scrollTo(anchor);
+  });
+});
+
+// setTimeout(() => {
+//   scroller.update();
+// }, 10);
+
+

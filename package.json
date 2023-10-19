@@ -9,6 +9,8 @@
   },
   "keywords": [],
   "dependencies": {
+    "aos": "^2.3.4",
+    "locomotive-scroll": "^4.1.4",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6",
     "swiper": "^10.3.1"

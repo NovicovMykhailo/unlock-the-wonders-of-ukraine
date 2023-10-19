@@ -1,13 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Lato&display=swap');
 @import '~node_modules/swiper/swiper.css';
+@import '~node_modules/locomotive-scroll/dist/locomotive-scroll.css';
 
 
-[data-scroll] {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}

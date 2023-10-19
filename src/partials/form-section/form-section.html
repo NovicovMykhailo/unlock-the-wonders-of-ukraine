@@ -1,6 +1,6 @@
-<section class="form-section" id="out-tours">
+<section class="form-section" id="out-tours" >
   <h2 class="visually-hidden">Make Order</h2>
-  <div class="form-container">
+  <div class="form-container" data-scroll data-scroll-speed="4">
     <div class="form-context">
       <div class="form-context-left">
         <h3 class="form-title">Start travel</h3>
@@ -13,7 +13,7 @@
         </p>
       </div>
 
-      <form class="form">
+      <form class="form" >
         <label class="form-label"
           >Name
           <input
@@ -30,6 +30,7 @@
             type="tel"
             name="tel"
             placeholder="+380__-___-__-__"
+            pattern="^\+?3?8?(0[5-9][0-9]\d{7})$"
             required
         /></label>
 
@@ -38,6 +39,7 @@
           name="message"
           cols="30"
           rows="10"
+          required
         ></textarea>
 
         <button type="submit" class="prim-btn sumbit-btn">Send</button>

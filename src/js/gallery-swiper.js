@@ -1,4 +1,5 @@
-import Swiper from 'swiper'; // https://swiperjs.com/get-started
+import Swiper, { Autoplay } from 'swiper';
+Swiper.use([Autoplay]); // https://swiperjs.com/get-started
 
 const prev = document.querySelector('.gallery-prev');
 const next = document.querySelector('.gallery-next');
@@ -6,10 +7,18 @@ const next = document.querySelector('.gallery-next');
 const gallerySwiper = new Swiper('.gallerySwiper', {
   slidesPerView: 1,
   spaceBetween: 16,
+  autoplay: {
+    delay: 1000,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: true,
+  },
 
   breakpoints: {
     835: {
       slidesPerView: 2,
+      autoplay: {
+        delay: 100,
+      },
     },
     1440: {
       cssWidthAndHeight: true,

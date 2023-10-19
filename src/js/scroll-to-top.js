@@ -1,9 +1,13 @@
+import {scroller} from "./base-scroll"
+
 const scrollToTop = document.querySelector('.arrow-up');
 
-const amountScrolled = 200;
+const amountScrolled = 260;
 
 function handleScroll(e) {
-  if (this.scrollY > amountScrolled) {
+
+  if (e.scroll.y > amountScrolled) {
+
     scrollToTop.classList.remove('is-hidden');
     scrollToTop.addEventListener('click', handleClick);
   } else {
@@ -12,8 +16,9 @@ function handleScroll(e) {
   }
 }
 
+
 function handleClick() {
-  window.scroll({ top: 0, behavior: 'smooth' });
+  scroller.scrollTo( y= -1);
 }
 
-window.addEventListener('scroll', handleScroll);
+scroller.on('scroll',handleScroll)  
