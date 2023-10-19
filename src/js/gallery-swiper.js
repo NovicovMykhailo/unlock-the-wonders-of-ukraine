@@ -1,5 +1,5 @@
-import Swiper, { Autoplay } from 'swiper';
-Swiper.use([Autoplay]); // https://swiperjs.com/get-started
+import Swiper from 'swiper';
+// https://swiperjs.com/get-started
 
 const prev = document.querySelector('.gallery-prev');
 const next = document.querySelector('.gallery-next');
