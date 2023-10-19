@@ -18,7 +18,7 @@ function handleScroll(e) {
 
 
 function handleClick() {
-  scroller.scrollTo( y= -1);
+  scroller.scrollTo("#header");
 }
 
 scroller.on('scroll',handleScroll)  
