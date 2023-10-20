@@ -22,7 +22,7 @@
 
 .fog-container {
   mix-blend-mode: hard-light;
-  animation: fog-animation 120s linear infinite;
+  animation: fog-animation 90s linear infinite;
 
   display: flex;
   flex-direction: row;
@@ -46,6 +46,7 @@
 @media screen and (min-width: $tab){
     .fog-image{
         background-size: 100% 140%;
+animation-duration: 120s;
     }
 }
 @media screen and (min-width: $dsk){
