@@ -16,12 +16,11 @@ function handleSubmit( e ) {
   ) {
 
      Email.send({
-      SecureToken : "ca171e1b-44f1-47e1-ba6c-f2b417d9d714",
       Host: 'smtp.elasticemail.com',
       Username: 'mikenovicov@gmail.com',
       Password: '2FBFB5B5CE882236870128C69FD7EA81C786',
       To: 'mikenovicov@gmail.com',
-      From: 'mikenovicov@gmail.com',
+      From: 'b9392265327c7f@lamasticots.com',
       Subject: 'Request Email from Unlock Ukraine site',
       Body: requestMail(e),
     }).then(message => {
