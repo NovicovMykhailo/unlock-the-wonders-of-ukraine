@@ -1,6 +1,11 @@
-<div class="swiper-slide review-card" >
+<div class="swiper-slide review-card">
   <div class="user-tab">
-    <div class="user-photo">
+    <div
+      class="user-photo"
+      data-scroll
+      data-scroll-class="scaleUp"
+      data-scroll-repeat="true"
+    >
       <img
         src="./images/users/user1@2x.jpg"
         alt="user photo"
@@ -8,9 +13,14 @@
       />
     </div>
 
-    <div class="user-info" >
+    <div class="user-info" data-scroll data-scroll-speed="0.1">
       <h3 class="user-name">Anastasia</h3>
-      <ul class="user-ratings">
+      <ul
+        class="user-ratings"
+        data-scroll
+        data-scroll-speed="-0.1"
+        data-scroll-direction="horizontal"
+      >
         <li class="rating-star">
           <img src="./images/icons/star.svg" alt="star" />
         </li>
@@ -29,7 +39,13 @@
       </ul>
     </div>
   </div>
-  <p class="user-review">
+  <p
+    class="user-review"
+    data-scroll
+    data-scroll-speed="-0.2"
+    data-scroll-class="scaleUp"
+    data-scroll-repeat="true"
+  >
     Professional guides, comfortable transport, excellent hotels and exciting
     excursions - it was unforgettable! I recommend this company to anyone who
     wants to get the best experience out of their trip.

@@ -6,7 +6,7 @@ const prev = document.querySelector('.review-prev');
 const reviewSwiper = new Swiper('.reviewSwiper', {
   slidesPerView: 1,
   spaceBetween: 16,
-
+  loop: false,
 
   breakpoints: {
     835: {
@@ -16,12 +16,12 @@ const reviewSwiper = new Swiper('.reviewSwiper', {
       autoResize: false,
       spaceBetween: 32,
       speed: 600,
-      parallax: true,
+
     },
     1440: {
       cssWidthAndHeight: true,
       speed: 600,
-      parallax: true,
+
     },
   },
   on: {

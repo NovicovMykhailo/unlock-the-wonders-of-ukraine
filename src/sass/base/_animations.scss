@@ -10,11 +10,14 @@
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-.appear{
-  animation: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; ;
+.appear {
+  animation: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-.scaleUp{
-  animation: scaling 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; ;
+.scaleUp {
+  animation: scaling 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+.bgScaleUp {
+  animation: bg-scaling 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @keyframes slide-top {
@@ -60,6 +63,7 @@
     opacity: 1;
   }
 }
+
 @keyframes pulsate-bck {
   0% {
     transform: scale(1);
@@ -72,7 +76,7 @@
   }
 }
 
-@keyframes opacity{
+@keyframes opacity {
   0% {
     transform: scale(0.6);
     opacity: 0;
@@ -80,19 +84,31 @@
   100% {
     transform: scale(1);
     opacity: 1;
-  
   }
 }
 
 @keyframes scaling {
   0% {
     transform: scale(0.6);
-
   }
   100% {
     transform: scale(1);
- 
-  
   }
-  
+}
+
+
+@keyframes bg-scaling {
+  0% {
+    background-size: 200px;
+  }
+  100% {
+    background-size: 782px;
+    @media screen and (min-width: $tab) {
+      background-size: 991px;
+      background-position: 50% 55px;
+    }
+    @media screen and (min-width: $dsk) {
+      background-size: 782px;
+    }
+  }
 }

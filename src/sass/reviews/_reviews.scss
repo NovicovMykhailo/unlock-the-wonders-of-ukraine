@@ -87,9 +87,12 @@
   width: 100%;
 }
 
-@media screen and (min-width: $mob) {
+@media screen and (min-width: $tab) {
   .user-tab {
     gap: 24px;
+  }
+  .review-card {
+    width: 320px !important;
   }
 }
 @media screen and (min-width: $tab) {
