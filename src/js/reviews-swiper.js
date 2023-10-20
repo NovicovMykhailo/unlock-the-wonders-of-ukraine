@@ -4,11 +4,9 @@ const next = document.querySelector('.review-next');
 const prev = document.querySelector('.review-prev');
 
 const reviewSwiper = new Swiper('.reviewSwiper', {
-
   slidesPerView: 1,
   spaceBetween: 16,
 
-  
 
   breakpoints: {
     835: {
@@ -17,18 +15,20 @@ const reviewSwiper = new Swiper('.reviewSwiper', {
       visibilityFullFit: true,
       autoResize: false,
       spaceBetween: 32,
+      speed: 600,
+      parallax: true,
     },
-    1440:{
+    1440: {
       cssWidthAndHeight: true,
-    
-      
-    }
+      speed: 600,
+      parallax: true,
+    },
   },
   on: {
     slideChange: () => handleInactive(),
     init: () => navigation(),
   },
-  loop: true
+  loop: true,
 });
 
 function handleInactive() {

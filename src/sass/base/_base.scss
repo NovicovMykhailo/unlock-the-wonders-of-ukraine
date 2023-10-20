@@ -3,7 +3,16 @@ body {
   font-weight: 400;
   color: $text-white;
   background-color: $bg;
-// max-height: 100vh;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+input:-webkit-autofill,input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $text-white;
+  box-shadow: inset 0 0 20px 20px #23232329;
 }
 
 a {

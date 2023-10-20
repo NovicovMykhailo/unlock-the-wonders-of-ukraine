@@ -6,12 +6,15 @@ const prev = document.querySelector('.tours-prev');
 const swiper = new Swiper('.tourSwiper', {
   spaceBetween: 16,
   slidesPerView: 1,
-  breakpoints: {
+  speed: 600,
 
+
+  breakpoints: {
     1440: {
       slidesPerView: 2,
-      spaceBetween: 32
-    }
+      spaceBetween: 32,
+
+    },
   },
   on: {
     slideChange: () => handleInactive(),

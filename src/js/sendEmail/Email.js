@@ -1,5 +1,9 @@
-export default function requestMail(data) {
-  const { name, message, tel } = data;
+export default function requestMail(e) {
+  const data = {
+    name: e.target.children[0].children.name.value,
+    tel: e.target.children[1].children.tel.value,
+    message: e.target.children[2].value,
+  };
   return `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -87,11 +91,11 @@ export default function requestMail(data) {
                                                                                 <tr>
                                                                                     <td align="left" class="esd-block-text">
                                                                                         <p style="font-size: 16px; text-align: center;"><strong>Customer request:</strong></p>
-                                                                                        <p><strong>Client Name</strong> : <u><em>${name.value}</em></u></p>
+                                                                                        <p><strong>Client Name</strong> : <u><em>${data.name}</em></u></p>
                                                                                         <p><br></p>
-                                                                                        <p><strong>Client tel</strong>:&nbsp;&nbsp;<u><em>${tel.value}</em></u></p>
+                                                                                        <p><strong>Client tel</strong>:&nbsp;&nbsp;<u><em>${data.tel}</em></u></p>
                                                                                         <p><br></p>
-                                                                                        <p><strong>Client ask for</strong>: <em>${message.value}</em></p>
+                                                                                        <p><strong>Client ask for</strong>: <em>${data.message}</em></p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
