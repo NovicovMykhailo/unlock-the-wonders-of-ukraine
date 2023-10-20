@@ -1,0 +1,29 @@
+.audio {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 25px;
+  right: 96%;
+  cursor: pointer;
+
+
+
+}
+.controls {
+  background-image: url('../images/icons/speaker-unmuted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform $animate;
+  width: 100%;
+  height: 100%;
+}
+
+.muted{
+  background-image: url('../images/icons/speaker-muted.svg');
+}
+
+@media screen and (min-width: $dsk){
+  .audio:hover .controls{
+    transform: scale(1.08) translateX(10%)
+}
+}

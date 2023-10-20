@@ -1,0 +1,55 @@
+.fog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.fog-image {
+  background: linear-gradient(360deg, #00000084 0%, rgba(255, 255, 255, 0) 30%),
+    url('../images/hero/fog.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 130%;
+  width: 100%;
+
+}
+
+.fog-image:nth-child(2n) {
+  transform: scaleX(-1);
+}
+
+.fog-container {
+  mix-blend-mode: hard-light;
+  animation: fog-animation 120s linear infinite;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  left: 0%;
+  bottom: 0;
+  height: 100%;
+  width: 300%;
+}
+
+@keyframes fog-animation {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@media screen and (min-width: $tab){
+    .fog-image{
+        background-size: 100% 140%;
+    }
+}
+@media screen and (min-width: $dsk){
+    .fog-image{
+        background-size: 100% 115%;
+    }
+}
