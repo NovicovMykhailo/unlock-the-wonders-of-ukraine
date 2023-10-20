@@ -4,15 +4,14 @@ const audioBtn = document.querySelector('.controls');
 audioBtn.addEventListener('click', handleClickAudio);
 
 function handleClickAudio(e) {
-console.log('click')
+audioBtn.classList.toggle('muted')
   if (audioBtn.classList.contains('muted')) {
     getSoundAndFadeAudio();
-    audioBtn.classList.add('muted')
+    
 
   } else {
     audioPlayer.play();
     audioPlayer.volume=1
-    audioBtn.classList.remove('muted')
   }
 }
 
