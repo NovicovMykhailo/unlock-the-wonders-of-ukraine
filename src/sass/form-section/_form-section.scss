@@ -3,35 +3,35 @@
   text-align: left;
   padding: 54px 0;
   width: 100%;
+  background-image: image-set(url('../images/form/mob.jpg'), url('../images/form/mob.webp') type('image/webp'));
 
-  background-image: url('../images/form/mob.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url('../images/form/mob@2x.jpg');
+    background-image: image-set(url('../images/form/mob@2x.jpg'), url('../images/form/mob@2x.webp') type('image/webp'));
   }
 
   @media screen and (min-width: $tab) {
-    background-image: url('../images/form/tab.jpg');
+    background-image: image-set(url('../images/form/tab.jpg'), url('../images/form/tab.webp') type('image/webp'));
+
     background-size: 602px 100%;
     background-position: left;
 
-
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/form/tab@2x.jpg');
+      background-image: image-set(url('../images/form/tab@2x.jpg'), url('../images/form/tab@2x.webp') type('image/webp'));
     }
   }
 
   @media screen and (min-width: $dsk) {
-    background-image: url('../images/form/dsk.jpg');
+    background-image: image-set(url('../images/form/dsk.jpg'), url('../images/form/dsk.webp') type('image/webp'));
+
     background-size: 704px 100%;
     background-position: left;
-  
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/form/dsk@2x.jpg');
+      background-image: image-set(url('../images/form/dsk@2x.jpg'), url('../images/form/dsk@2x.webp') type('image/webp'));
     }
   }
 }
@@ -140,7 +140,7 @@
     gap: 24px;
     width: calc(50% - 16px);
   }
-  .form{
+  .form {
     width: calc(50% - 16px);
   }
 }
@@ -151,9 +151,8 @@
     padding: 96px 180px;
     align-self: flex-end;
   }
-  .form-section{
+  .form-section {
     padding-right: 32px;
     width: $dsk;
   }
-
 }

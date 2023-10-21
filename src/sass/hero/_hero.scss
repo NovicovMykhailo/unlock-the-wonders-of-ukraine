@@ -2,13 +2,14 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background-image: url('../images/hero/mob.jpg');
+  background-image: image-set(url('../images/hero/mob.jpg'), url('../images/hero/mob.webp') type('image/webp'));
+
   object-fit: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   @media screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/mob@2x.jpg');
+    background-image: image-set(url('../images/hero/mob@2x.jpg'), url('../images/hero/mob@2x.webp') type('image/webp'));
   }
 }
 
@@ -44,11 +45,7 @@
   top: 60%;
   left: 0;
 
-  background: linear-gradient(
-    15deg,
-    #fff -54.67%,
-    rgba(255, 255, 255, 0) 58.38%
-  );
+  background: linear-gradient(15deg, #fff -54.67%, rgba(255, 255, 255, 0) 58.38%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,9 +61,10 @@
     height: 1075px;
     padding-bottom: 300px;
     padding-top: 300px;
-    background-image: url('../images/hero/tab.jpg');
+
+    background-image: image-set(url('../images/hero/tab.jpg'), url('../images/hero/tab.webp') type('image/webp'));
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero/tab@2x.jpg');
+      background-image: image-set(url('../images/hero/tab@2x.jpg'), url('../images/hero/tab@2x.webp') type('image/webp'));
     }
   }
   .main-title {
@@ -86,9 +84,9 @@
 
 @media screen and (min-width: $dsk) {
   .hero {
-    background-image: url('../images/hero/dsk.jpg');
+    background-image: image-set(url('../images/hero/dsk.jpg'), url('../images/hero/dsk.webp') type('image/webp'));
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero/dsk@2x.jpg');
+      background-image: image-set(url('../images/hero/dsk@2x.jpg'), url('../images/hero/dsk@2x.webp') type('image/webp'));
     }
   }
 }

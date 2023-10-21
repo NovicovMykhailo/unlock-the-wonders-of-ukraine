@@ -1,14 +1,18 @@
 <div class="tour-card swiper-slide">
   <div class="card-image-contaier">
-    <img
-      data-scroll
-      data-scroll-class="scaleUp"
-      data-scroll-repeat="true"
-      class="tour-card-image"
-      src="./images/tours/tour2.jpg"
-      srcset="./images/tours/tour2.jpg 1x, ./images/tours/tour2@2x.jpg 2x"
-      alt="Tour view ilustration"
-    />
+    <picture>
+      <source srcset="./images/tours/tour2.webp 1x, ./images/tours/tour2@2x.webp 2x" type="image/webp" />
+      <source srcset="./images/tours/tour2.jpg 1x, ./images/tours/tour2@2x.jpg 2x" type="image/jpg" />
+      <img
+        data-scroll
+        data-scroll-class="scaleUp"
+        data-scroll-repeat="true"
+        class="tour-card-image"
+        src="./images/tours/tour2.jpg"
+        alt="Tour view ilustration"
+      />
+    </picture>
+   
   </div>
   <div class="card-content" data-scroll data-scroll-speed="1">
     <h3 class="tour-card-title">Ancient History & Vibrant Present</h3>

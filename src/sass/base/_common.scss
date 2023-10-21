@@ -2,5 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Lato&display=swap');
 @import '~node_modules/swiper/swiper.css';
 @import '~node_modules/locomotive-scroll/dist/locomotive-scroll.css';
+@import '~node_modules/notiflix/dist/notiflix-3.2.6.min.css';
 
-
+#NotiflixConfirmWrap{
+    height: 100vh;
+}

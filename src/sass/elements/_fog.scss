@@ -5,15 +5,16 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  mix-blend-mode: hard-light;
 }
 .fog-image {
   background: linear-gradient(360deg, #00000084 0%, rgba(255, 255, 255, 0) 30%),
-    url('../images/hero/fog.png');
+  url('../images/hero/fog-mob.png');
+
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100% 130%;
+  background-size: 100% 140%;
   width: 100%;
-
 }
 
 .fog-image:nth-child(2n) {
@@ -21,8 +22,7 @@
 }
 
 .fog-container {
-  mix-blend-mode: hard-light;
-  animation: fog-animation 60s linear infinite;
+  animation: fog-animation 45s linear infinite;
 
   display: flex;
   flex-direction: row;
@@ -43,14 +43,20 @@
   }
 }
 
-@media screen and (min-width: $tab){
-    .fog-image{
-        background-size: 100% 140%;
-animation-duration: 120s;
-    }
+@media screen and (min-width: $tab) {
+  .fog-image {
+    background: linear-gradient(360deg, #00000084 0%, rgba(255, 255, 255, 0) 30%),
+    url('../images/hero/fog-tab.png');
+    background-size: 100% 110%;
+    background-position: bottom;
+    animation-duration: 120s;
+  }
 }
-@media screen and (min-width: $dsk){
-    .fog-image{
-        background-size: 100% 115%;
-    }
+@media screen and (min-width: $dsk) {
+  .fog-image {
+    background: linear-gradient(360deg, #00000084 0%, rgba(255, 255, 255, 0) 30%),
+    url('../images/hero/fog.png');
+    background-size: 100% 115%;
+    background-position: bottom;
+  }
 }
