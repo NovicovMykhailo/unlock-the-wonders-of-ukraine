@@ -7,20 +7,20 @@ export const scroller = new LocomotiveScroll({
   getDirection: true,
   inertia: 0.75,
   useKeyboard: true,
-  lerp:0.1,
-  initPosition:{ x: 0, y: 0 },
+ // lerp:0.1,
+  //initPosition:{ x: 0, y: 0 },
  // mobile: {
    // breakpoint: 0,
    // smooth: true,
    // inertia: 0.8,
   //  getDirection: true,
 // },
-  tablet: {
-    breakpoint: 0,
-    smooth: true,
-    inertia: 0.8,
-    getDirection: true,
-  },
+ // tablet: {
+ //   breakpoint: 0,
+  //  smooth: true,
+  //  inertia: 0.8,
+ //   getDirection: true,
+ // },
 });
 
 new ResizeObserver(() => scroller.update()).observe(
