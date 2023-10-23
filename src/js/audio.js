@@ -28,20 +28,22 @@ addEventListener('DOMContentLoaded', () => {
       .catch(error => {
         audioBtn.classList.add('muted');
         if (error.name === 'NotAllowedError') {
-          console.log('autoplay audio is not aloowed')
-          // Confirm.show(
-          //   'Welcome to Our Site',
-          //   'Do you want to play background atmosphere?',
-          //   'Yes',
-          //   'No',
-          //   () => {
-          //     audioPlayer.play();
-          //     audioBtn.classList.remove('muted');
-          //   },
-          //   () => audioPlayer.pause(),
+          // console.log('autoplay audio is not aloowed');
+          setTimeout(() => {
+            Confirm.show(
+              'Welcome to Our Site',
+              'Do you want to play background atmosphere?',
+              'Yes',
+              'No',
+              () => {
+                audioPlayer.play();
+                audioBtn.classList.remove('muted');
+              },
+              () => audioPlayer.pause(),
 
-          //   { position: 'center-top' }
-          // );
+             
+            );
+          }, 5000);
         }
       });
   }

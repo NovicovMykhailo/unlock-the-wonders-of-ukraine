@@ -6,7 +6,7 @@ body {
 }
 * {
   -webkit-tap-highlight-color: transparent;
-  will-change: transform;
+
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -67,3 +67,4 @@ body.modal-open {
 .overflow {
   overflow: hidden;
 }
+
