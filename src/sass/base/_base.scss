@@ -3,6 +3,8 @@ body {
   font-weight: 400;
   color: $text-white;
   background-color: $bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 * {
   -webkit-tap-highlight-color: transparent;
