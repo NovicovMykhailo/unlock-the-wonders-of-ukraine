@@ -20,7 +20,9 @@ const reviewSwiper = new Swiper('.reviewSwiper', {
     },
     1440: {
       cssWidthAndHeight: true,
+      slidesPerView: 1,
       speed: 600,
+      loop:false,
 
     },
   },
